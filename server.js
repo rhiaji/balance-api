@@ -7,6 +7,9 @@ const ssc = new SSC('https://enginetestnet.rishipanthee.com');
 
 const PORT = process.env.PORT || 5000
 
+app.get("/", function(req, res) {
+    res.send("WELCOME TO BALANCE API!")
+})
 
 
 app.get("/balance/:user", function(req, res) {
